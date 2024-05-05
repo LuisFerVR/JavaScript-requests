@@ -1,4 +1,4 @@
-import {conexiónAPI} from "./conexiónAPI.js";
+import {conexionAPI} from "./conexiónAPI.js";
 
 const lista = document.querySelector("[data-lista]");
 
@@ -19,8 +19,8 @@ function crearCard(titulo,imagen,descripcion,url){
     return video;
 }
 
-async function listarVideos (parameters) {
-    const videos = await conexiónAPI.listarVideos();
+async function listarVideos () {
+    const videos = await conexionAPI.listarVideos();
     videos.forEach(video=>lista.appendChild(crearCard(video.titulo,video.imagen,video.descripcion,video.url)));
 }
 listarVideos();

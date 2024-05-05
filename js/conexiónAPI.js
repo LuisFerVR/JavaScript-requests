@@ -19,7 +19,7 @@ async function enviarVideo(titulo,descripcion,imagen,url){
     return apiConvertida;
 }
 
-export const conexiónAPI = {
+export const conexionAPI = {
     listarVideos,
     enviarVideo
 }
