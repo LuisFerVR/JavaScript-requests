@@ -19,7 +19,14 @@ async function enviarVideo(titulo,descripcion,imagen,url){
     return apiConvertida;
 }
 
+async function fnBuscarVideo(palabraBuscada){
+    const api = await fetch(`http://localhost:3001/videos?q=${palabraBuscada}`);
+    const apiJson = api.json();
+    return apiJson;
+}
+
 export const conexionAPI = {
     listarVideos,
-    enviarVideo
+    enviarVideo,
+    fnBuscarVideo
 }
