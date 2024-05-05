@@ -20,7 +20,11 @@ function crearCard(titulo,imagen,descripcion,url){
 }
 
 async function listarVideos () {
-    const videos = await conexionAPI.listarVideos();
-    videos.forEach(video=>lista.appendChild(crearCard(video.titulo,video.imagen,video.descripcion,video.url)));
+    try{
+        const videos = await conexionAPI.listarVideos();
+        videos.forEach(video=>lista.appendChild(crearCard(video.titulo,video.imagen,video.descripcion,video.url)));
+    }catch{
+        lista.innerHTML=`<h2 class="mensaje__titulo">No fue posible cargar la lista de videos</h2>`;
+    }
 }
 listarVideos();
