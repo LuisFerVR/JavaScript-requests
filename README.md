@@ -24,7 +24,7 @@ Este proyecto tiene como finalidad reforzar los conociminetos adquiridos durante
 
 ## :rocket: Despliegue:
 
-Este proyecto **NO** contiene despliegue ya que se uso un Json como Api local, lo cual implica que no permita tener dicos recursos disponibles en la web.
+Este proyecto **NO** contiene despliegue, ya que se uso un Json como Api local, lo cual implica que no permita tener dichos recursos disponibles en la web.
 
 ## 🖼️ Screenshots 🖼️
 ![Screenshot de la pantalla inicial de AluraPlay](https://github.com/josevflores911/JavaScript/blob/main/img/encabezado/screenshoot_a.PNG)
